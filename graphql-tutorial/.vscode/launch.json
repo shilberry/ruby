@@ -47,7 +47,12 @@
             "args": [
                 "-I",
                 "${workspaceRoot}"
-            ]
+            ],
+            "showDebuggerOutput": true,
+            "env": {
+                "MY_RUBY_HOME": "/Users/markoreta/.rbenv/versions/2.5.0/bin/ruby",
+                "PATH" : "/Users/markoreta/.rbenv/versions/2.5.0/bin:/usr/local/Cellar/rbenv/1.1.1/libexec:/Users/markoreta/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/markoreta/.rvm/bin"
+            }
         },
         {
             "name": "RSpec - active spec file only",

@@ -32,8 +32,9 @@
             ],
             "showDebuggerOutput": true,
             "env": {
-                "MY_RUBY_HOME": "/Users/markoreta/.rbenv/versions/2.5.0/bin/ruby",
-                "PATH" : "/Users/markoreta/.rbenv/versions/2.5.0/bin:/usr/local/Cellar/rbenv/1.1.1/libexec:/Users/markoreta/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/markoreta/.rvm/bin"
+                "MY_RUBY_HOME": "/Users/markoreta/.rvm/rubies/ruby-2.5.0",
+                "PATH": "/Users/markoreta/.rvm/gems/ruby-2.5.0/bin/:/Users/markoreta/.rvm/gems/ruby-2.5.0@global/bin:/Users/markoreta/.rvm/rubies/ruby-2.5.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/markoreta/.rvm/bin",
+                "GEM_PATH": "/Users/markoreta/.rvm/gems/ruby-2.5.0"
             }
             
 

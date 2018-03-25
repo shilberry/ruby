@@ -1,0 +1,4 @@
+{
+    "ruby.rubocop.executePath": "/Users/markoreta/.rvm/gems/ruby-2.2.3/bin/rubocop/",
+    "git.ignoreLimitWarning": true
+}

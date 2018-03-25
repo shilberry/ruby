@@ -1,0 +1,24 @@
+I"@(function() {
+  window.App || (window.App = {});
+
+  App.loggedIn = function() {
+    if ($('meta[name=logged_in]').attr('authenticated') === "true") {
+      localStorage.setItem('current_user_id', App.CurrentUser().id);
+      return true;
+    } else {
+      localStorage.setItem('current_user_id', void 0);
+      return false;
+    }
+  };
+
+  App.scrolledToBottom = function() {
+    return $(window).scrollTop() > $(document).height() - $(window).height() - 200;
+  };
+
+  $(document).ready(function() {
+    App.loggedIn();
+    return App.scrolledToBottom();
+  });
+
+}).call(this);
+:ET

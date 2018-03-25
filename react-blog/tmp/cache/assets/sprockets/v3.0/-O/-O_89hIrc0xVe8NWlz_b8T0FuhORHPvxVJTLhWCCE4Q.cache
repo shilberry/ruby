@@ -1,0 +1,15 @@
+I"
+/*
+ * Get AppEnvironment
+ */
+
+(function() {
+  App.Environment = function() {
+    return {
+      development: $('meta[name="env"]').attr('env') === "development",
+      production: $('meta[name="env"]').attr('env') === "production"
+    };
+  };
+
+}).call(this);
+:ET

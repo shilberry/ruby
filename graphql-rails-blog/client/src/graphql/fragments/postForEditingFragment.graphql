@@ -1,0 +1,6 @@
+fragment PostForEditingFragment on Post {
+  id
+  title
+  content
+  description
+}

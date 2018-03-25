@@ -1,6 +1,7 @@
 $: << File.expand_path('../lib', __dir__)
 require File.expand_path('../boot', __FILE__)
 
+
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
@@ -15,8 +16,17 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
+
+
 module GraphqlBlog
   class Application < Rails::Application
+    config.autoload_paths << Rails.root.join('app/graph')
+    config.autoload_paths << Rails.root.join('app/lib')
+    config.autoload_paths << Rails.root.join('app/types')
+    config.autoload_paths << Rails.root.join('app/graph/types')
+    
   end
+
 
 end

@@ -1,0 +1,78 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Debug Local File",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/main.rb"
+        },
+        {
+            "name": "Listen for rdebug-ide",
+            "type": "Ruby",
+            "request": "attach",
+            "cwd": "${workspaceRoot}",
+            "remoteHost": "127.0.0.1",
+            "remotePort": "1234",
+            "remoteWorkspaceRoot": "${workspaceRoot}"
+        },
+        {
+            "name": "Rails server",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/bin/rails",
+            "args": [
+                "server"
+            ],
+            "showDebuggerOutput": true,
+            "env": {
+                "MY_RUBY_HOME": "/Users/markoreta/.rvm/rubies/ruby-2.5.0",
+                "PATH": "/Users/markoreta/.rvm/gems/ruby-2.5.0/bin/:/Users/markoreta/.rvm/gems/ruby-2.5.0@global/bin:/Users/markoreta/.rvm/rubies/ruby-2.5.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/markoreta/.rvm/bin",
+                "GEM_PATH": "/Users/markoreta/.rvm/gems/ruby-2.5.0"
+            }
+            
+
+        },
+        {
+            "name": "RSpec - all",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/bin/rspec",
+            "args": [
+                "-I",
+                "${workspaceRoot}"
+            ],
+            "showDebuggerOutput": true,
+            "env": {
+                "MY_RUBY_HOME": "/Users/markoreta/.rbenv/versions/2.5.0/bin/ruby",
+                "PATH" : "/Users/markoreta/.rbenv/versions/2.5.0/bin:/usr/local/Cellar/rbenv/1.1.1/libexec:/Users/markoreta/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/markoreta/.rvm/bin"
+            }
+        },
+        {
+            "name": "RSpec - active spec file only",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/bin/rspec",
+            "args": [
+                "-I",
+                "${workspaceRoot}",
+                "${file}"
+            ]
+        },
+        {
+            "name": "Cucumber",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/bin/cucumber"
+        }
+    ]
+}

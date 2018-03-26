@@ -1,0 +1,28 @@
+
+<script>
+    var React = window.React = require('react');
+    var ReactDOM = window.ReactDOM = require('react-dom');
+    var ReactDOMServer = window.reactDOMServer = require('react-dom/server');
+    var Relay = window.Relay = require('react-relay');
+
+ 
+    $(document).ready(function () {
+        console.log('Starting to load react module');
+
+        ReactDOM.render(
+            <Relay.RootContainer
+                Component={Events}
+                route={EventsRoute}
+                renderLoading={function(){
+                    return <div className="loader">
+                        <span className="fa fa-spin fa-spinner"></spin>
+                        </div>;
+                }} />,
+                document.getElementById("events")
+        )
+
+        console.log('finished');
+    });
+</script>
+
+<h1>using react?</h1>
